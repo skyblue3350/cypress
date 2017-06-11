@@ -1,7 +1,7 @@
 import os
 from datetime import timedelta
 
-DEBUG = os.environ["DEBUG"]
+DEBUG = bool(os.environ["DEBUG"])
 HOST = os.environ["HOST"]
 PORT = int(os.environ["PORT"])
 SECRET_KEY = os.environ["SECRET_KEY"]
