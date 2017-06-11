@@ -1,0 +1,4 @@
+flask
+flask-ldap3-login
+flask-login
+flask-wtf

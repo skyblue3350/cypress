@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cypress | login</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/design.css", _external=True) }}">
+</head>
+
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form method="post">
+            <div style="color:red;">
+                {% for k, v in form.errors.items() %}
+                    {{ k }}
+                    {% for msg in v %}
+                        {{ msg }}
+                    {% endfor %}
+                {% endfor %}
+            </div>
+            {{ form.username(placeholder="LDAP Username") }}
+            {{ form.password(placeholder="Password") }}
+            {{ form.submit() }}
+            {{ form.hidden_tag() }}
+        </form>
+    </div>
+</body>
+</html>
+
