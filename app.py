@@ -22,7 +22,6 @@ def load_user(id):
         return users[id]
     return None
 
-# trrigered by ldap auth success
 @ldap_manager.save_user
 def save_user(dn, username, data, memberships):
     user = User(dn, username, data)

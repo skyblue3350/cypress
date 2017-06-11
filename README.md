@@ -1,7 +1,7 @@
 # cypress
-ngx_http_auth_request_moduleと組み合わせて利用するLDAPのSSOシステムです．
-設定例はexampleを参考にして下さい．
-Python3系で動作します．
+ngx_http_auth_request_moduleと組み合わせて利用するLDAPのSSOシステムです．  
+設定例はexampleを参考にして下さい．  
+Python3系で動作します．  
 
 ## 利用
 ### クイックスタート
